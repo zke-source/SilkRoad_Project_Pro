@@ -1,0 +1,5 @@
+﻿{
+    "username":  "admin",
+    "token":  "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQURNSU4iLCJzdWIiOiJhZG1pbiIsImlhdCI6MTc2NzA5MDIzNCwiZXhwIjoxNzY3MDk3NDM0fQ.jr1W9b-rUyuU8fOZyYAGc4A1yPMpovt6-kD-n1Q-B3k",
+    "role":  "ADMIN"
+}

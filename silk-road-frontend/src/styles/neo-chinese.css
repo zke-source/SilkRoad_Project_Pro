@@ -1,0 +1,97 @@
+:root {
+  /* Silk Road Gold Theme */
+  --el-color-primary: #C69C6D; /* Main Gold */
+  --el-color-primary-light-3: #D7B993;
+  --el-color-primary-light-5: #E3CCAF;
+  --el-color-primary-light-7: #EEDFCC;
+  --el-color-primary-light-8: #F4E9DB;
+  --el-color-primary-light-9: #FAF4EB;
+  --el-color-primary-dark-2: #9E7D57;
+
+  /* Secondary / Accent */
+  --sr-accent-red: #A63434; /* Dunhuang Red */
+  --sr-accent-green: #3E6B5D; /* Mineral Green */
+  --sr-bg-color: #F9F7F2; /* Rice Paper / Warm Beige */
+  --sr-text-primary: #2C2621; /* Dark Brown-Black */
+  --sr-text-secondary: #5D554D; /* Medium Brown */
+
+  /* Overrides */
+  --el-text-color-primary: var(--sr-text-primary);
+  --el-text-color-regular: var(--sr-text-secondary);
+  --el-bg-color-page: var(--sr-bg-color);
+  
+  /* Neo-Chinese Font Stack */
+  --sr-font-family-serif: "Noto Serif SC", "Songti SC", "STSong", "SimSun", serif;
+  --sr-font-family-sans: "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+body {
+  font-family: var(--sr-font-family-sans);
+  background-color: var(--sr-bg-color);
+  color: var(--sr-text-primary);
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d7b993' fill-opacity='0.15'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--sr-font-family-serif);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+/* Card Styling - Softer shadows, slight border */
+.el-card, .section-card, .hotel-card, .post-card, .sidebar-card {
+  border: 1px solid #E8E0D5 !important;
+  box-shadow: 0 4px 12px rgba(198, 156, 109, 0.08) !important;
+  background-color: #fff !important;
+}
+
+/* Button Styling - Rounder or more distinct */
+.el-button--primary {
+  --el-button-text-color: #ffffff;
+  --el-button-bg-color: var(--el-color-primary);
+  --el-button-border-color: var(--el-color-primary);
+  --el-button-hover-text-color: #ffffff;
+  --el-button-hover-bg-color: var(--el-color-primary-light-3);
+  --el-button-hover-border-color: var(--el-color-primary-light-3);
+  --el-button-active-bg-color: var(--el-color-primary-dark-2);
+  --el-button-active-border-color: var(--el-color-primary-dark-2);
+  font-weight: 500;
+}
+
+.el-button--primary.is-plain {
+  --el-button-text-color: var(--el-color-primary-dark-2); /* Darker text for visibility */
+  --el-button-bg-color: #ffffff; /* White bg for better contrast */
+  --el-button-border-color: var(--el-color-primary); /* Solid border */
+  --el-button-hover-text-color: #ffffff;
+  --el-button-hover-bg-color: var(--el-color-primary);
+  --el-button-hover-border-color: var(--el-color-primary);
+}
+
+/* Tags */
+.el-tag.el-tag--warning {
+  --el-tag-bg-color: #FAF4EB;
+  --el-tag-border-color: #E3CCAF;
+  --el-tag-text-color: #9E7D57;
+}
+
+/* Navbar active state override */
+.links a.active {
+  color: var(--el-color-primary) !important;
+}
+
+.links a.active::after {
+  background-color: var(--el-color-primary) !important;
+}
+
+/* Scrollbar customization */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #D7B993;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF4EB;
+}

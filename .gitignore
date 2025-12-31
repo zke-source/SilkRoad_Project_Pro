@@ -1,0 +1,5 @@
+silk-road-frontend/node_modules/
+silk-road-frontend/.vite/
+silk-road-frontend/.env.local
+silk-road-backend/target/
+silk-road-backend/.env.local
